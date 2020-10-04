@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD target/backend-mysql.jar backend-mysql.jar
+COPY /target/assignment-backend.jar assignment-backend.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","backend-mysql.jar"]
+ENTRYPOINT ["java","-jar","assignment-backend.jar"]
